@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+  <title>HARSHIT BHATIA</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/font-awesome-pro.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/scroll_button.css" />
+  <link rel="stylesheet" href="css/plugin.css" />
+  <link rel="stylesheet" href="css/spacing.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+  <!--================================
+        PRELOADER START
+    =================================-->
+  <div class="preloader">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg>
+    <h5 class="preloader-text">LOADING</h5>
+  </div>
+  <!--================================
+        PRELOADER END
+    =================================-->
+  <!--================================
+        MENU START
+    =================================-->
+  <nav class="navbar navbar-expand-lg main_menu">
+    <div class="container main_menu_bg">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://zyan.vercel.app/images/logo.png" alt="HARSHIT" class="img-fluid w-100" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-sharp fa-regular fa-bars bar_icon"></i>
+        <i class="fa-solid fa-xmark" style="color: #0c1e3b;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton active" href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="droap_menu">
+              <li><a href="index.html">Home 1</a></li>
+              <li><a href="index_2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton" href="#">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton" href="#service">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton" href="blog_list.html">blog <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="droap_menu">
+              <li>
+                <a href="blog_list.html">Blog List</a>
+              </li>
+              <li><a href="blog_details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text_hover_animaiton" href="contact.html">contact</a>
+          </li>
+        </ul>
+        <span class="toggle_icon c-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+    <div class="offcanvas-header">
+      <a class="offcanvas-logo" href="index_2.html">
+        <img src="images/logo2.png" alt="HARSHIT" class="img-fluid w-100" />
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark" style="color: #0c1e3b;"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="tf__design_form offcanvas_form">
+        <div class="offcanvas-content-box">
+          <h4 class="offcanvas_title">About us</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+            tempor incididunt ut labore et magna aliqua. Ut enim ad minim
+            veniam laboris.
+          </p>
+        </div>
+        <div class="offcanvas_contact_form">
+          <h4 class="offcanvas_title">Get In Touch</h4>
+          <form action="#">
+            <input type="text" placeholder="Your Name" aria-autocomplete="list" />
+            <input type="email" placeholder="Your Email" />
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="common_btn">SUBMIT NOW</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================================
+        MENU END
+    =================================-->
+
+  <!--================================
+        BANNER START
+    =================================-->
+  <section class="tf__banner banner" style="background: url(https://zyan.vercel.app/images/bg/banner.jpg)">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-xl-6 col-lg-8">
+          <div class="tf__banner_text">
+            <h1>
+              Hi, I'm HARSHIT! Creative
+              <span class="cd-headline rotate-1">
+                <!-- ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  -->
+                <span class="cd-words-wrapper">
+                  <b class="is-visible">Developer</b>
+                  <b>Coder</b>
+                  <b>Player</b>
+                </span>
+              </span>
+            </h1>
+            <p>
+              I'm a passionate Software Developer with a mission to create
+              delightful and intuitive digital experiences. With a strong
+              foundation in design principles and a keen eye for detail, I
+              specialize in translating complex ideas into user-friendly
+              interfaces that captivate and engage.
+            </p>
+            <ul>
+              <li>
+                <a class="common_btn rounded-5" href="#"><b>DOWNLOAD CV </b><i class="fa-solid fa-download fa-bounce fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-4">
+          <div class="tf__banner_img">
+            <div class="img">
+              <img src="images/me1.jpg" alt="ZYAN" class="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        BANNER END
+    =================================-->
+  <!--================================
+        SERVICE START
+    =================================-->
+  <section class="tf__service pt_130 xs_pt_80" id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 m-auto">
+          <div class="tf__section_heading mb_40">
+            <h5 class="has-animation">MY serivce</h5>
+            <h2 class="has-animation">
+              Crafting stories through <br />
+              design and innovation
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="tf__single_service fade_left" data-trigerId="service">
+            <span>
+              <img src="svg/website-design.svg" alt="service" class="svg w-100" />
+            </span>
+            <h3>Website Design</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="tf__single_service fade_left" data-trigerId="service">
+            <span>
+              <img src="svg/logo-design.svg" alt="service" class="svg w-100" />
+            </span>
+            <h3>FRONTEND DEVELOPMENT</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="tf__single_service fade_left" data-trigerId="service">
+            <span>
+              <img src="svg/app-development.svg" alt="service" class="svg w-100" />
+            </span>
+            <h3>BACKEND Development</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        SERVICE END
+    =================================-->
+
+  <!--================================
+        ABOUT START
+    =================================-->
+  <section class="tf__about pt_140 xs_pt_80" id="about">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-xxl-7 col-lg-6 col-xl-6">
+          <div class="tf__section_heading pb_80 xs_pb_50">
+            <h5 class="has-animation">About Me</h5>
+            <h2 class="has-animation">
+              Transforming visions into exceptional portfolios
+            </h2>
+          </div>
+          <div class="tf__about_text">
+            <p>
+              
+            </p>
+            <a class="common_btn" href="#">DOWNLOAD CV <i class="fa-solid fa-arrow-down-to-line"></i></a>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-lg-6 col-xl-6">
+          <div class="tf__about_img fade_right" data-trigerId="about">
+            <img src="images/me1.jpg" alt="ZYAN" class="img-fluid w-100" />
+            <div class="tf__about_img_text">
+              <i class="fas fa-chart-pie-alt"></i>
+              <div class="tf__about_content">
+                <h4>Daily Activity</h4>
+                <p>HARSHIT BHATIA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        ABOUT END
+    =================================-->
+
+  <!--================================
+        DESIGN START
+    =================================-->
+  <section class="tf__design mt_135 xs_mt_40 mb_120 xs_mb_80" id="counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__design_text">
+            <h2>Design <span>and Innovation</span></h2>
+            <p class="">
+              
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-md-6">
+              <div class="tf__design_counter fade_left" data-trigerId="counter">
+                <span class="icon">
+                  <img src="svg/complete-project.svg" alt="counter" class="svg img-fluid w-100" />
+                </span>
+                <h3><span class="counter">3</span>k+</h3>
+                <p>Complete project</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="tf__design_counter fade_left" data-trigerId="counter">
+                <span class="icon">
+                  <img src="svg/client-review.svg" alt="counter" class="img-fluid w-100 svg" />
+                </span>
+                <h3><span class="counter">59</span>+</h3>
+                <p>Client review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__design_form">
+            <h2 class="has-animation">GET TOUCH ME?</h2>
+            <p class="">
+              For your car we will do everything advice design in us repairs
+              and maintenance We are the some preferred.
+            </p>
+            <form action="#">
+              <input class="" type="text" placeholder="Your Name" />
+              <input class="" type="email" placeholder="Your Email" />
+              <input class="" type="text" placeholder="Phone Number" />
+              <textarea class="" rows="4" placeholder="Message"></textarea>
+              <button type="submit" class="common_btn">SUBMIT NOW</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        DESIGN END
+    =================================-->
+
+  <!--================================
+        SKILLS START
+    =================================-->
+  <section class="tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 col-lg-8 m-auto mb_60">
+          <div class="tf__section_heading mb_40">
+            <h5 class="has-animation">EXPERIENCE</h5>
+            <h2 class="has-animation">
+              Showcasing your talent <br />
+              amplifying your impact
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <span>MARCH 2023 - JULY 2023</span>
+            <h3>FRONTEND DEVELOPER</h3>
+            <p>
+              ACCLAIM CODING SOLUTIONS
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__single_skills fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <span>SEPT 2023 - JAN 2024</span>
+            <h3>PHP-LARAVEL DEVELOPER</h3>
+            <p>
+              MONTEAGE IT SOLUTIONS PVT LTD
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>HTML</p>
+            <div id="bar1" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="85"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>Python</p>
+            <div id="bar2" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="60"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>CSS</p>
+            <div id="bar3" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="80"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>PHP</p>
+            <div id="bar4" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="80"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>Java Script</p>
+            <div id="bar5" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="65"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="tf__team_skills_bar_single fade_bottom" data-trigerId="skills" data-stagger=".25">
+            <p>.NET</p>
+            <div id="bar6" class="barfiller">
+              <div class="tipWrap">
+                <span class="tip"></span>
+              </div>
+              <span class="fill" data-percentage="50"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        SKILLS END
+    =================================-->
+
+  <!--================================
+        PORTFOLIO START
+    =================================-->
+  <section class="tf__portfolio mt_120 xs_mt_80" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 mb_30">
+          <div class="tf__section_heading">
+            <h5 class="has-animation">my recent Portfolio</h5>
+            <h2 class="has-animation">
+              <!-- Elevate your brand to new <br />
+              heights with our portfolio expertise -->
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8 col-md-6">
+          <a href="https://www.youtube.com/watch?v=B-ytMSuwbf8" class="tf__portfolio_item play_btn"
+            data-cursor="Watch <br> video">
+            <img src="https://zyan.vercel.app/images/portfolio/1.jpg" alt="portfolio" class="img-fluid w-100" />
+            <div class="text">
+              <h4>sheet metal bending</h4>
+              <p>youtube</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <a class="tf__portfolio_item play_btn" href="https://vimeo.com/132528823" data-cursor="Watch <br> video">
+            <img src="https://zyan.vercel.app/images/portfolio/2.jpg" alt="portfolio" class="img-fluid w-100" />
+            <div class="text">
+              <h4>sheet metal bending</h4>
+              <p>Vimeo</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-6 col-md-6">
+          <a href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F159967086&amp;show_artwork=true&amp;maxwidth=1020&amp;maxheight=1000&amp;auto_play=1"
+            class="tf__portfolio_item play_btn" data-cursor="Audio <br> sound">
+            <img src="https://zyan.vercel.app/images/portfolio/3.jpg" alt="portfolio" class="img-fluid w-100" />
+            <div class="text">
+              <h4>sheet metal bending</h4>
+              <p>soundcloud</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-6 col-md-6">
+          <a href="https://zyan.vercel.app/images/portfolio/4.jpg" class="tf__portfolio_item image_popup"
+            data-cursor="View <br> Image">
+            <img src="https://zyan.vercel.app/images/portfolio/4.jpg" alt="portfolio" class="img-fluid w-100" />
+            <div class="text">
+              <h4>sheet metal bending</h4>
+              <p>Image</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+        PORTFOLIO END
+    =================================-->
+
+  <!--================================
+        BRAND START
+    =================================-->
+  <div class="tf__brand mt_120 xs_mt_80">
+    <div class="row">
+      <div class="col-12">
+        <div class="marquee_animi">
+          <ul>
+            <li>* PHP</li>
+            <li>* Python</li>
+            <li>* .NET</li>
+            <li>* JAVA</li>
+            <li>* C++</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================================
+        BRAND END
+    =================================-->
+
+  <!--================================
+        FOOTER START
+    =================================-->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="pt_120 xs_pt_80 sm_pt_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="tf__footer_content fade_right" data-trigerId="footer" data-stagger=".25">
+                <div class="icon">
+                  <div class="icon-contianer">
+                    <img src="svg/map.svg" alt="footer" class="img-fluid w-100 svg" />
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>Noida</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tf__footer_content fade_right" data-trigerId="footer" data-stagger=".25">
+                <div class="icon">
+                  <div class="icon-contianer">
+                    <img src="svg/phone.svg" alt="footer" class="img-fluid w-100 svg" />
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Lets talk us</h3>
+                  <a href="callto:9887777385">9887777385</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tf__footer_content fade_right" data-trigerId="footer" data-stagger=".25">
+                <div class="icon">
+                  <div class="icon-contianer">
+                    <img src="svg/envelope.svg" alt="footer" class="img-fluid w-100 svg" />
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Send us email</h3>
+                  <a href="mailto:harshitbhatia7844@gmail.com">harshitbhatia7844@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="tf__footer_copyright">
+                <p>© CodeeFly 2023 | All Rights Reserved</p>
+                <ul>
+                  <li><a href="#" class="text_hover_animaiton">Trams & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Sitemap</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================================
+  FOOTER END
+=================================-->
+  <!--================================
+        SCROLL BUTTON START
+    =================================-->
+  <div class="progress active c-pointer">
+    <svg class="progress-svg" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+  <!--================================
+        SCROLL BUTTON END
+    =================================-->
+
+  <!--================================
+        CURSOR START
+    =================================-->
+  <div id="magic-cursor">
+    <div id="ball"></div>
+  </div>
+  <!--================================
+        CURSOR END
+    =================================-->
+
+  <script src="js/plugin.js"></script>
+  <!--scroll button js-->
+  <script src="js/scroll_button.js"></script>
+  <!--sticky sidebar js-->
+  <script src="js/sticky_sidebar.js"></script>
+  <!-- Animation -->
+  <script src="js/animation.js"></script>
+  <!--main/custom js-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
